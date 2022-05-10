@@ -4,7 +4,7 @@ import urllib3
 import itertools
 
 urllib3.disable_warnings()
-
+KEY_SESSION = os.environ["KEY_SESSION"]
 BASE_URL = "https://dekt.hfut.edu.cn/scReports/api/wx/netlearning"
 #KEY_SESSION = '2019217769'  # 学号
 
