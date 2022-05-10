@@ -6,6 +6,7 @@ import os
 
 urllib3.disable_warnings()
 KEY_SESSION = os.environ["KEY_SESSION"]
+SCKEY = os.environ["SCKEY"] 
 BASE_URL = "https://dekt.hfut.edu.cn/scReports/api/wx/netlearning"
 #KEY_SESSION = '2019217769'  # 学号
 
@@ -65,7 +66,7 @@ def get_answer(option_list: list):
 
 if __name__ == '__main__':
     articles = get_articles()
-    finish = False
+    finish = False    
     for article in articles:
         if finish:
             break
@@ -86,4 +87,5 @@ if __name__ == '__main__':
             else:
                 print("\t" + res['errMsg'])
                 finish = True
+                requests.post('https://sctapi.ftqq.com/' +SCKEY+ '.send?' + 'title=学习完成&text=')
                 break
