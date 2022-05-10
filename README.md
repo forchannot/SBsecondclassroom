@@ -9,9 +9,12 @@
 
 ![如图](images/settime.png)
 #### <font color=Tomato>注意：图中第二位数字“小时”为UTC标准，也就是说——UTC时+8小时=北京时间</font>
-2. * secrets设置（方便使用）
+2. * secrets设置（方便使用）  
+
 ![如图](images/setkey.png)
-设置完成后外出学习时可推送至微信
+设置后完成学习可推送至微信  
+
 3. * Sever酱的KEY获取地址
-[![sever]](https://sct.ftqq.com)  
-![sever](images/getkey.png)
+[Sever酱](https://sct.ftqq.com)  
+复制获得的KEY  
+![](images/getkey.png)
