@@ -5,7 +5,7 @@ import itertools
 import os
 
 urllib3.disable_warnings()
-NAME = os.environ["NAME"] 
+KEY_SESSION = os.environ["NAME"] 
 BASE_URL = "https://dekt.hfut.edu.cn/scReports/api/wx/netlearning"
 #KEY_SESSION = '2019217769'  # 学号
 
@@ -25,7 +25,7 @@ def get_articles():
     url = BASE_URL + "/page/1/100"
     for i in range(3):
         payload = json.dumps({"category": "", "columnType": str(i)})
-        headers = {'name': NAME, **HEADERS}
+        headers = {'key_session': KEY_SESSION, **HEADERS}
         response = requests.request("POST",
                                     url,
                                     headers=headers,
@@ -39,7 +39,7 @@ def get_question(id: str):
     url = f"{BASE_URL}/questions/{id}"
     payload = {}
     secret = '66a6d6358388f52cb3a41c67efa9f7e2'
-    headers = {'name': NAME, 'secret': secret, **HEADERS}
+    headers = {'key_session': KEY_SESSION, 'secret': secret, **HEADERS}
     response = requests.request("GET", url, headers=headers, data=payload)
     response = json.loads(response.text)['data']['questions'][0]
     que_id = response['id']
@@ -50,7 +50,7 @@ def get_question(id: str):
 def submit_answer(que_id, option_list):
     url = f"{BASE_URL}/answer/{que_id}"
     payload = json.dumps(option_list)
-    headers = {'name': NAME, **HEADERS}
+    headers = {'key_session': KEY_SESSION, **HEADERS}
     response = requests.request("POST", url, headers=headers, data=payload)
     return json.loads(response.text)
 
