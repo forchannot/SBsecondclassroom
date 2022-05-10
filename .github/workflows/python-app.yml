@@ -39,7 +39,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       env:
-        NAME: ${{ secrets.NAME }} 
+        KEY_SESSION: ${{ secrets.NAME }} 
         SCKEY: ${{ secrets.SCKEY }}
       run: |
         python main.py
