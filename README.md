@@ -10,7 +10,10 @@
 ![如图](images/settime.png)
 #### <font color=Tomato>注意：图中第二位数字“小时”为UTC标准，也就是说——UTC时+8小时=北京时间</font>
 2. * secrets设置（方便使用）  
-
+| Secret名称 | Secret内容            | 样例                          |  
+|---------------------| --------------------------- | ----------------------------- |  
+| NAME   | 学号              | XXXXXXXXX                    |
+| SCKEY   | Sever酱的KEY              | XXXXXXXXXXX                   |
 ![如图](images/setkey.png)
 设置后完成学习可推送至微信  
 
