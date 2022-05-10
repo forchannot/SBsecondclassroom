@@ -11,13 +11,13 @@
 #### <font color=Tomato>注意：图中第二位数字“小时”为UTC标准，也就是说——UTC时+8小时=北京时间</font>
 2. * secrets设置（方便使用）  
 | Secrets 名称 | Secrets 内容   |  
-| ------------ | -------------- |  
-| KEY_SESSION  | 学号           |  
-| SCKEY        | Sever 酱的 KEY |        
+| ------------     | --------------     |  
+| KEY_SESSION  |    学号                  |  
+| SCKEY                    | Server 酱的 KEY |        
 ![如图](images/setkey.png)
 设置后完成学习可推送至微信  
 
-3. * Sever酱的KEY获取地址
-[Sever酱](https://sct.ftqq.com)  
+3. * Server酱的KEY获取地址
+[Server酱](https://sct.ftqq.com)  
 复制获得的KEY  
 ![](images/getkey.png)
