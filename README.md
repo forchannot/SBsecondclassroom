@@ -11,7 +11,7 @@
 #### <font color=Tomato>注意：图中第二位数字“小时”为UTC标准，也就是说——UTC时+8小时=北京时间</font>
 2. * secrets设置（方便使用）  
 | Secrets名称 | Secrets内容   |    
-|----------- | ------------  |  
+|-----------   | ------------   |  
 | NAME       |  学号         |   
 | SCKEY      | Sever酱的KEY  |          
 ![如图](images/setkey.png)
