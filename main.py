@@ -2,6 +2,7 @@ import requests
 import json
 import urllib3
 import itertools
+import os
 
 urllib3.disable_warnings()
 KEY_SESSION = os.environ["KEY_SESSION"]
