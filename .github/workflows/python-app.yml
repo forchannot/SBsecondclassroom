@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '40 8 * * *'
 
 permissions:
   contents: read
@@ -40,5 +40,6 @@ jobs:
     - name: Test with pytest
       env:
         KEY_SESSION: ${{ secrets.KEY_SESSION }} 
+        SCKEY: ${{ secrets.SCKEY }}
       run: |
         python main.py
