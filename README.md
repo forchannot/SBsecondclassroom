@@ -13,8 +13,8 @@
 
 |Secrets 名称|Secrets 内容 |  
 | --------------| ----------------|  
-| KEY_SESSION &nbsp; &nbsp;|学&nbsp;号&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|  
-| SCKEY &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|Server 酱的 KEY |      
+|   KEY_SESSION|  学号|  
+|   SCKEY|  Server 酱的 KEY |      
 
 ![如图](images/setkey.png)
 设置后完成学习可推送至微信  
