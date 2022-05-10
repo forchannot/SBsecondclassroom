@@ -6,7 +6,7 @@ import itertools
 urllib3.disable_warnings()
 
 BASE_URL = "https://dekt.hfut.edu.cn/scReports/api/wx/netlearning"
-KEY_SESSION = '2019217769'  # 学号
+#KEY_SESSION = '2019217769'  # 学号
 
 HEADERS = {
     'Host': 'dekt.hfut.edu.cn',
