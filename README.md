@@ -10,7 +10,7 @@
 ![如图](images/settime.png)
 #### <font color=Tomato>注意：图中第二位数字“小时”为UTC标准，也就是说——UTC时+8小时=北京时间</font>
 2. * secrets设置（方便使用）  
-| <div style="width: 150pt">Secrets 名称</div> | <div style="width: 150pt">Secrets 内容</div>   |  
+| <div style="width: 60pt">Secrets 名称</div>|<div style="width: 60pt">Secrets 内容</div>|  
 | ------------     | --------------     |  
 | KEY_SESSION  |    学号                  |  
 | SCKEY                    | Server 酱的 KEY |        
