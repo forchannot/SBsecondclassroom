@@ -6,7 +6,7 @@
 * 可以用`gthub action`或者`云函数`每天定时执行
 ## 修改部分
 1.定时设置
-![如图](https://cdn.jsdelivr.net/gh/nekowu/SBsecondclassroom/tree/main/images/settime.png)
+![如图](images/settime.png)
 2.secrets设置（方便使用）
 
 
