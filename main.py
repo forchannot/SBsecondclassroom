@@ -5,8 +5,7 @@ import itertools
 import os
 
 urllib3.disable_warnings()
-KEY_SESSION = os.environ["KEY_SESSION"]
-SCKEY = os.environ["SCKEY"] 
+KEY_SESSION = os.environ["KEY_SESSION"] 
 BASE_URL = "https://dekt.hfut.edu.cn/scReports/api/wx/netlearning"
 #KEY_SESSION = '2019217769'  # 学号
 
@@ -87,5 +86,6 @@ if __name__ == '__main__':
             else:
                 print("\t" + res['errMsg'])
                 finish = True
+                SCKEY = os.environ["SCKEY"]
                 requests.post('https://sctapi.ftqq.com/' +SCKEY+ '.send?' + 'title=学习完成&text=')
                 break
